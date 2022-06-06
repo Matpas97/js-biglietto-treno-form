@@ -8,7 +8,7 @@
 // Chiedo all'utente la sua eta e Km
 
 const generateButton = document.getElementById('generate-ticket');
-generateButton.addEventListener('clik',
+generateButton.addEventListener("click"),
 function() {
     const userName = document.getElementById('user-name').value;
     const userKm = parseInt( document.getElementById('user-km').value);
@@ -26,15 +26,16 @@ function() {
      }
     const finalPrice = price - reduction;
 
-    document.getElementById('ticket-name').innerHTML = UserName;
+    document.getElementById('ticket-name').innerHTML = userName;
     document.getElementById('ticket-price').innerHTML = finalPrice.toFixed(2);
     document.getElementById('ticket').classList.add('active');
 
 }
 );
  const cancelTicket = document.getElementById('cancel-ticket');
- cancelTicket.addEventListener('clik ,
+ cancelTicket.addEventListener("click "),
  function() {
-     document.getElementById('user-name').value = '';
+     document.getElementById('user-name').value = '0';
  }
  );
+
