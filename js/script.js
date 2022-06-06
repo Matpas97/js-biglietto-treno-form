@@ -26,12 +26,15 @@ function() {
      }
     const finalPrice = price - reduction;
 
-    document.getElementById('ticket-name').value;
-    document
+    document.getElementById('ticket-name').innerHTML = UserName;
+    document.getElementById('ticket-price').innerHTML = finalPrice.toFixed(2);
+    document.getElementById('ticket').classList.add('active');
 
 }
-   
-
-
-
-)
+);
+ const cancelTicket = document.getElementById('cancel-ticket');
+ cancelTicket.addEventListener('clik ,
+ function() {
+     document.getElementById('user-name').value = '';
+ }
+ );
