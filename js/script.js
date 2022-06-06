@@ -7,8 +7,8 @@
 
 // Chiedo all'utente la sua eta e Km
 
-const generateButton = document.getElementById('generate-ticket');
-generateButton.addEventListener("click"),
+const generateButton = document.getElementById('my-button');
+generateButton.addEventListener("click",
 function() {
     const userName = document.getElementById('user-name').value;
     const userKm = parseInt( document.getElementById('user-km').value);
@@ -21,7 +21,7 @@ function() {
 
     if (userAge === 'minorenne') {
         reduction = price * 20 / 100;
-     } else if (userAge === 'over') {
+     } else if (userAge === 'over65') {
          reduction = price * 40 / 100;
      }
     const finalPrice = price - reduction;
@@ -32,10 +32,11 @@ function() {
 
 }
 );
- const cancelTicket = document.getElementById('cancel-ticket');
- cancelTicket.addEventListener("click "),
- function() {
-     document.getElementById('user-name').value = '0';
- }
+ const cancelTicket = document.getElementById('cancel-option');
+ cancelTicket.addEventListener("click",
+    function() {
+        document.getElementById('user-name').value = '';
+    }
  );
 
+ 
